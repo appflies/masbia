@@ -25,9 +25,9 @@ function Slideshow() {
     >
       <CarouselContent>
         <CarouselItem key="1">
-          <div className="w-full max-h-[600px]">
+          <div className="w-full max-h-[680px]">
             <Card className="rounded-none">
-              <CardContent className="flex aspect-square items-center justify-center max-h-[620px] w-full">
+              <CardContent className="flex aspect-square items-center justify-center max-h-[700px] w-full">
                 <Image src={images.slide1} alt="Slide 1" className="absolute w-full h-full object-cover" />
                 <span className="text-4xl font-semibold">1</span>
               </CardContent>
@@ -38,7 +38,7 @@ function Slideshow() {
         <CarouselItem key="2">
           <div className="w-full max-h-[600px]">
             <Card className="rounded-none">
-              <CardContent className="flex aspect-square items-center justify-center max-h-[620px] w-full">
+              <CardContent className="flex aspect-square items-center justify-center max-h-[700px] w-full">
                 <Image src={images.slide2} alt="Slide 2" className="absolute w-full h-full object-cover" />
                 <span className="text-4xl font-semibold">2</span>
               </CardContent>
@@ -49,7 +49,7 @@ function Slideshow() {
         <CarouselItem key="3">
           <div className="w-full max-h-[600px]">
             <Card className="rounded-none">
-              <CardContent className="flex aspect-square items-center justify-center max-h-[620px] w-full">
+              <CardContent className="flex aspect-square items-center justify-center max-h-[700px] w-full">
                 <Image src={images.slide3} alt="Slide 3" className="absolute w-full h-full object-cover" />
                 <span className="text-4xl font-semibold">3</span>
               </CardContent>

@@ -197,6 +197,15 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+
+
+      <div className="relative py-[100px] overflow-hidden">
+        <Image src={images.technology} alt="product" className="absolute w-full h-full object-cover" />
+        <div className="relative z-10 max-w-[1100px] mx-auto text-black mt-[100px] mb-[100px]">
+          asdasd
+        </div>
+      </div>
     </React.Fragment>
   );
 }

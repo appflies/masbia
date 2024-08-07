@@ -9,7 +9,13 @@ import seafood from "@/assets/images/seafood.svg";
 import chicken from "@/assets/images/chicken.svg";
 import beef from "@/assets/images/beef.svg";
 import paradigm from "@/assets/images/paradigm.png";
+import tech from "@/assets/images/tech.png";
+import technology from "@/assets/images/technology.jpg";
+import nature from "@/assets/images/nature.svg";
 export {
+  technology,
+  tech,
+  nature,
   paradigm,
   logo,
   slide1,
