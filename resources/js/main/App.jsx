@@ -1,8 +1,9 @@
 import React from "react"
+import Router from "../router/Index"
 
 const App = () => {
     return (
-        <div>App</div>
+        <Router />
     );
 }
 
