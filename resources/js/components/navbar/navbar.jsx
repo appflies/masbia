@@ -1,6 +1,8 @@
 import React from "react";
 import { images } from "@/constants"
 import { Separator } from "@/components/ui/separator"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom";
 
@@ -14,8 +16,16 @@ function Navbar() {
                     </div>
 
                     <div>
-                        <div className="mb-2">
+                        <div className="mb-[10px] flex flex-row">
                             <div className="uppercase text-2xl font-medium">Already cooked food</div>
+
+                            <div>
+                                <FontAwesomeIcon icon={faMagnifyingGlass} className="text-[16px] mt-[10px] ml-4" />
+                            </div>
+
+                            <Button variant="cart" size="icon" className="ml-4 mt-[3px] h-[30px] w-[30px]">
+                                <FontAwesomeIcon icon={faShoppingCart} className="text-[12px]" />
+                            </Button>
                         </div>
 
                         <div className="flex flex-row justify-between gap-9 uppercase text-[14px] font-semibold">
