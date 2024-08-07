@@ -1,10 +1,10 @@
 import './bootstrap';
 
-import React from "react"
-import ReactDOM from "react-dom"
-import { BrowserRouter } from "react-router-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import App from './main/App';
+import App from './main';
 
 ReactDOM.createRoot(document.getElementById('app')).render(
     <BrowserRouter>
