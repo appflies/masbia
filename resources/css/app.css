@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-with-triangle {
+    position: relative;
+    padding-left: 2.5rem; /* Extra space for the triangle */
+}
+
+.button-with-triangle::before {
+    content: "";
+    position: absolute;
+    bottom: 24px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border-top: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid black;
+    transform: translate(-100%, 100%);
+}
