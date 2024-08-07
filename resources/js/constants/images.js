@@ -5,4 +5,20 @@ import slide3 from "../../assets/slide3.jpg";
 import quality from "../../assets/quality.svg";
 import about from "../../assets/about.png";
 import product from "../../assets/product.jpg";
-export { logo, slide1, slide2, slide3, quality, about, product };
+import seafood from "../../assets/seafood.svg";
+import chicken from "../../assets/chicken.svg";
+import beef from "../../assets/beef.svg";
+import paradigm from "../../assets/paradigm.png";
+export {
+    paradigm,
+    logo,
+    slide1,
+    slide2,
+    slide3,
+    quality,
+    about,
+    product,
+    seafood,
+    chicken,
+    beef,
+};
