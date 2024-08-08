@@ -42,7 +42,9 @@ function Slideshow() {
             <Card className="rounded-none">
               <CardContent className="flex aspect-square items-center justify-center max-h-[700px] w-full">
                 <Image src={images.slide2} alt="Slide 2" className="absolute w-full h-full object-cover" />
-                <span className="text-4xl font-semibold">2</span>
+                <span className="text-4xl font-semibold relative mt-[100px]">
+                  <Image src={images.hero} alt="" className="w-[500px]" />
+                </span>
               </CardContent>
             </Card>
           </div>
@@ -53,7 +55,9 @@ function Slideshow() {
             <Card className="rounded-none">
               <CardContent className="flex aspect-square items-center justify-center max-h-[700px] w-full">
                 <Image src={images.slide3} alt="Slide 3" className="absolute w-full h-full object-cover" />
-                <span className="text-4xl font-semibold">3</span>
+                <span className="text-4xl font-semibold relative mt-[100px]">
+                  <Image src={images.hero} alt="" className="w-[500px]" />
+                </span>
               </CardContent>
             </Card>
           </div>
