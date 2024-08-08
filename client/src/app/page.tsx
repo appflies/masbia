@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image"
+import Link from "next/link"
 import { images } from "@/constants";
 import { Navbar, Slideshow } from "@/components";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ const HomePage = () => {
       <Navbar />
 
       <div className="mt-[480px] max-w-[1100px] mx-auto" id="about">
-        <div className="grid grid-cols-2 pt-[130px] pb-[50px]">
+        <div className="grid grid-cols-2 pt-[130px] pb-[80px]">
           <div>
             <div className="flex flex-row justify-between">
               <div>
@@ -149,7 +150,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="relative z-10 max-w-[1100px] mx-auto text-black my-[100px]">
+      <div className="relative z-10 max-w-[1100px] mx-auto text-black mt-[100px]">
         <div className="grid grid-cols-2">
           <div>
             <div className="flex flex-row">
@@ -214,7 +215,7 @@ const HomePage = () => {
             <Image src={images.nature} alt="" width={70} className="w-[70px]" />
           </div>
 
-          <div className="grid grid-cols-2 mt-[50px]">
+          <div className="grid grid-cols-2 mt-[50px] pb-[100px]">
             <div className="mt-[-45px]">
               <div className="flex flex-row">
                 <h3 className="font-semibold text-[32px] uppercase text-white" id="technology">
@@ -283,7 +284,6 @@ const HomePage = () => {
           </div>
 
           <div className="grid grid-cols-3 text-white max-w-[1000px] mx-auto">
-
             <div>
               <div>
                 <div className="flex flex-row mt-4 text-[#d4a564] max-w-[270px]">
@@ -397,7 +397,7 @@ const HomePage = () => {
           <div className="pt-[130px] max-w-[1000px] mx-auto">
             <div className="grid grid-cols-2 gap-10">
               <div className="relative flex flex-col">
-                <Card className="flex flex-col h-full">
+                <Card className="flex flex-col h-full bg-[#101b33] text-white">
                   <CardHeader>
                     <Image
                       src={images.plant}
@@ -433,7 +433,7 @@ const HomePage = () => {
               </div>
 
               <div className="relative flex flex-col">
-                <Card className="flex flex-col h-full">
+                <Card className="flex flex-col h-full bg-[#101b33] text-white">
                   <CardHeader>
                     <Image
                       src={images.heart}
@@ -489,15 +489,15 @@ const HomePage = () => {
         <div className="grid grid-cols-2">
           <div>
             <h4 className="text-justify text-[20px] mt-4">
-              Food irradiation (the application of ionizing radiation to food) is a technology that improves the safety and shelf life of food by reducing or eliminating microorganisms and insects.
+              Food ionization (the application of ionizing food) is a technology that improves the safety and shelf life of food by reducing or eliminating microorganisms and insects.
             </h4>
 
             <p className="mt-4 text-normal text-[16px] text-justify">
-              Irradiation does not affect macronutrients, such as proteins, fats and
+              Ionization does not affect macronutrients, such as proteins, fats and
               carbohydrates carbon, nor in inerals.
             </p>
             <p className="text-[16px] text-justify">
-              Like pasteurized milk and canned fruits and vegetables, irradiation
+              Like pasteurized milk and canned fruits and vegetables, ionization
               causes food is safer for the consumer.
             </p>
 
@@ -562,13 +562,13 @@ const HomePage = () => {
             </div>
 
             <div>
-              <Card className="max-w-[300px] mx-auto">
+              <Card className="max-w-[300px] mx-auto bg-[#101b33] text-white">
                 <CardContent>
                   <div>
                     <div className="mt-4">
                       <p className="text-[10px] ml-7">Address</p>
                       <div className="flex flex-row">
-                        <FontAwesomeIcon icon={farCheckCircle} className="mt-1 text-[18px]" />
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 text-[18px]" />
                         <div className="ml-2">
                           <p className="text-[13px]">Arce 441 3° F </p>
                           <p className="text-[13px]">Ciudad de Buenos Aires, Argentina</p>
@@ -578,7 +578,7 @@ const HomePage = () => {
 
                     <div className="mt-4">
                       <div className="flex flex-row">
-                        <FontAwesomeIcon icon={farCheckCircle} className="mt-3 text-[18px]" />
+                        <FontAwesomeIcon icon={faPhone} className="mt-3 text-[18px]" />
                         <div className="ml-2">
                           <p className="text-[13px]">Call Us</p>
                           <p className="text-[13px]">+54 11 49373697</p>
@@ -588,7 +588,7 @@ const HomePage = () => {
 
                     <div className="mt-4">
                       <div className="flex flex-row">
-                        <FontAwesomeIcon icon={farCheckCircle} className="mt-1 text-[18px]" />
+                        <FontAwesomeIcon icon={faEnvelope} className="mt-1 text-[18px]" />
                         <div className="ml-2">
                           <p className="text-[13px] mt-[2px]">export@masbiagroup.com</p>
                         </div>
@@ -611,10 +611,10 @@ const HomePage = () => {
 
                   <div className="uppercase">
                     <ul className="list-none text-[14px] space-y-1">
-                      <li>References</li>
-                      <li>Contact</li>
-                      <li>Our Product</li>
-                      <li>Technology</li>
+                      <li><Link href={"/#references"}>References</Link></li>
+                      <li><Link href={"/#contact"}>Contact</Link></li>
+                      <li><Link href={"/#our-product"}>Our Product</Link></li>
+                      <li><Link href={"/#technology"}>Technology</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -626,9 +626,9 @@ const HomePage = () => {
 
                   <div className="uppercase">
                     <ul className="list-none text-[14px] space-y-1">
-                      <li>A Paradigm Shift</li>
-                      <li>About Us</li>
-                      <li>Benefits</li>
+                      <li><Link href={"/#a-paradigm-shift"}>A Paradigm Shift</Link></li>
+                      <li><Link href={"/#about"}>About Us</Link></li>
+                      <li><Link href={"/#benefits"}>Benefits</Link></li>
                       <li>
                         Shop
                         <FontAwesomeIcon icon={faShoppingCart} className="text-[16px] ml-1" />
