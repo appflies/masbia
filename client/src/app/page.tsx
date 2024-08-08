@@ -457,7 +457,7 @@ const HomePage = () => {
                     <p className="mt-6 text-justify text-[16px]">
                       The reason for this is twofold: on the one hand, some chicken
                       parts can be sold at prices practically at cost, as is the case
-                      with "leg and thigh," and on the other, the commercialization
+                      with &quot;leg and thigh,&quot; and on the other, the commercialization
                       of chicken without freezing avoids the high costs not only of
                       freezing to -18°C (IQF: individually quick frozen) but also of
                       transport and storage in the cold chain
