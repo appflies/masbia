@@ -12,7 +12,29 @@ import paradigm from "@/assets/images/paradigm.png";
 import tech from "@/assets/images/tech.png";
 import technology from "@/assets/images/technology.jpg";
 import nature from "@/assets/images/nature.svg";
+import benefits from "@/assets/images/benefits.jpg";
+import world from "@/assets/images/world.svg";
+import plant from "@/assets/images/plant.png";
+import heart from "@/assets/images/heart.png";
+import references from "@/assets/images/references.png";
+import endorse from "@/assets/images/endorse.jpg";
+import endorseLeft from "@/assets/images/endorse-left.svg";
+import endorseRight from "@/assets/images/endorse-right.svg";
+import contact from "@/assets/images/contact.jpg";
+import foodcard from "@/assets/images/food-card.svg";
+import hero from "@/assets/images/hero.png";
 export {
+  hero,
+  foodcard,
+  contact,
+  endorseLeft,
+  endorseRight,
+  endorse,
+  references,
+  plant,
+  heart,
+  world,
+  benefits,
   technology,
   tech,
   nature,

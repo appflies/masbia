@@ -29,7 +29,9 @@ function Slideshow() {
             <Card className="rounded-none">
               <CardContent className="flex aspect-square items-center justify-center max-h-[700px] w-full">
                 <Image src={images.slide1} alt="Slide 1" className="absolute w-full h-full object-cover" />
-                <span className="text-4xl font-semibold">1</span>
+                <span className="text-4xl font-semibold relative mt-[100px]">
+                  <Image src={images.hero} alt="" className="w-[500px]" />
+                </span>
               </CardContent>
             </Card>
           </div>

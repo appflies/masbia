@@ -30,17 +30,17 @@ function Navbar() {
             </div>
 
             <div className="flex flex-row justify-between gap-9 uppercase text-[14px] font-semibold">
-              <Link href={"/"}>About</Link>
-              <Link href={"/"}>Our Product</Link>
-              <Link href={"/"}>A paradigm shift</Link>
-              <Link href={"/"}>Technology</Link>
-              <Link href={"/"}>Benefits</Link>
-              <Link href={"/"}>References</Link>
-              <Link href={"/"}>Contact</Link>
+              <Link href={"/#about"}>About</Link>
+              <Link href={"/#our-product"}>Our Product</Link>
+              <Link href={"/#a-paradigm-shift"}>A paradigm shift</Link>
+              <Link href={"/#technology"}>Technology</Link>
+              <Link href={"/#benefits"}>Benefits</Link>
+              <Link href={"/#references"}>References</Link>
+              <Link href={"/#contact"}>Contact</Link>
 
 
               <div className="flex flex-row gap-4 mt-[-15px] font-semibold">
-                <Separator orientation="vertical" className="h-[50px] text-white" />
+                <Separator orientation="vertical" className="h-[50px] w-[2px] bg-white" />
                 <div className="flex flex-col text-[11px]">
                   <div>
                     ENG
