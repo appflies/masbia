@@ -19,11 +19,11 @@ function Slideshow() {
 
   return (
     <React.Fragment>
-      <div className="relative w-screen max-h-[680px] min-h-[480px] overflow-hidden">
+      <div className="relative w-full max-h-[680px] min-h-[480px] mt-[-2px]">
         <Navbar />
         <Carousel
           plugins={[plugin.current]}
-          className="relative w-screen h-full min-h-[480px] p-0 m-0"
+          className="relative w-full h-full min-h-[480px] p-0 m-0"
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
         >
@@ -40,7 +40,7 @@ function Slideshow() {
                     <Image
                       src={images.hero}
                       alt="Hero 1"
-                      className="w-[500px] py-[100px] xs:mx-3"
+                      className="w-[500px] pb-[100px] pt-[60px] xs:mx-3"
                     />
                   </span>
                 </CardContent>

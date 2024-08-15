@@ -19,7 +19,7 @@ function Navbar() {
         <div className="max-w-[1040px] mx-auto">
           <Button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white lg:hidden sm:flex mt-[10px] ml-2 w-[50px] h-[50px]"
+            className="text-white lg:hidden sm:flex mt-[10px] ml-2 w-[50px] h-[50px] bg-[#1e293b]"
             variant="secondary"
             size="icon"
           >
