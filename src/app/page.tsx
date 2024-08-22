@@ -12,6 +12,8 @@ import { faCheckCircle as farCheckCircle } from "@fortawesome/free-regular-svg-i
 import { faCheckCircle as fasCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Fab from '@mui/material/Fab';
 import {
   Card,
   CardContent,
@@ -20,6 +22,10 @@ import {
 } from "@/components/ui/card"
 
 export default function Home() {
+  const handleClickWhatsApp = () => {
+    window.open("https://wa.me/message/XTCMJ66XPD6LG1", "_blank");
+  }
+
   const handleLearnMoreClick = () => {
     window.open("https://drive.google.com/file/d/1D0ncaHCUCfCNJ14OpHcKoXSR-9nIj1aC/view", "_blank");
   };
@@ -683,6 +689,19 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="fixed bottom-6 right-6">
+        <Fab
+          onClick={handleClickWhatsApp}
+          sx={{
+            backgroundColor: "#25D366", // Verde oficial de WhatsApp
+            "&:hover": {
+              backgroundColor: "#25D366", // Elimina el efecto hover manteniendo el mismo color
+            },
+          }}
+        >
+          <FontAwesomeIcon icon={faWhatsapp} color="#ffffff" className="text-[32px]" />
+        </Fab>
       </div>
     </React.Fragment >
   )
