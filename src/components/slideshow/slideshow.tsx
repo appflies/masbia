@@ -19,7 +19,7 @@ function Slideshow() {
 
   return (
     <React.Fragment>
-      <div className="relative w-screen max-h-[680px] min-h-[480px] overflow-hidden">
+      <div className="relative w-screen h-full p-0 max-h-[680px] min-h-[480px] overflow-hidden">
         <Navbar />
         <Carousel
           plugins={[plugin.current]}
@@ -29,7 +29,7 @@ function Slideshow() {
         >
           <CarouselContent>
             <CarouselItem key="1" className="min-h-[480px]">
-              <Card className="w-full h-full p-0 m-0 rounded-none min-h-[480px]">
+              <Card className="w-full h-full p-0 m-0 rounded-none h-full min-h-[480px]">
                 <CardContent className="w-full h-full p-0 m-0 relative min-h-[480px]">
                   <Image
                     src={images.slide1}
@@ -40,7 +40,7 @@ function Slideshow() {
                     <Image
                       src={images.hero}
                       alt="Hero 1"
-                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[60px] xl:pt-[30px] xs:mx-3"
+                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[30%] lg:pt-[0px] xl:pt-0 xl:-mt-24 xs:mx-3"
                     />
                   </span>
                 </CardContent>
@@ -59,7 +59,7 @@ function Slideshow() {
                     <Image
                       src={images.hero}
                       alt="Hero 2"
-                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[60px] xl:pt-[30px] xs:mx-3"
+                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[30%] lg:pt-[0px] xl:pt-0 xl:-mt-24 xs:mx-3"
                     />
                   </span>
                 </CardContent>
@@ -78,7 +78,7 @@ function Slideshow() {
                     <Image
                       src={images.hero}
                       alt="Hero 3"
-                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[60px] xl:pt-[30px] xs:mx-3"
+                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[30%] lg:pt-[0px] xl:pt-0 xl:-mt-24 xs:mx-3"
                     />
                   </span>
                 </CardContent>

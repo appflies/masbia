@@ -20,6 +20,12 @@ import {
   CardHeader,
   CardFooter,
 } from "@/components/ui/card"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 export default function Home() {
   const handleClickWhatsApp = () => {
@@ -34,9 +40,217 @@ export default function Home() {
     window.open("https://drive.google.com/file/d/1ZXAWP_hGWw_vaGLkGGW4eZq9WiJVXi3R/view", "_blank");
   };
 
+  const image = [
+    { src: "/images/01.jpg", tooltip: "/images/beef.png" },
+    { src: "/images/02.jpg", tooltip: "/images/muslo.png" },
+    { src: "/images/04.jpg", tooltip: "/images/weenie.png" },
+    { src: "/images/06.jpg", tooltip: "/images/cow.png" },
+    { src: "/images/09.jpg", tooltip: "/images/burguer.png" },
+    { src: "/images/11.jpg", tooltip: "/images/hotdog.png" },
+    { src: "/images/13.jpg", tooltip: "/images/albondiga.png" },
+  ];
+
+  const [visibleTooltip, setVisibleTooltip] = React.useState<number | null>(null);
+
   return (
     <React.Fragment>
       <Header />
+
+      <div className="mt-16 bg-greenbg bg-cover bg-center pb-6">
+
+          <div className="w-[350px] h-[240px] lg:w-[590px] mx-auto lg:h-[300px]">
+            <video className="object-cover w-full h-full" controls>
+            <source src="/spot.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mt-6">
+        <div
+          className="relative"
+          onMouseEnter={() => setVisibleTooltip(0)}
+          onMouseLeave={() => setVisibleTooltip(null)}
+        >
+          <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+            <img
+              src={image[0].src}
+              className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+              alt="image 1"
+            />
+          </div>
+          {visibleTooltip === 0 && (
+            <div
+              id="tooltip-0"
+              className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[0px]"
+            >
+              <img
+                src={image[0].tooltip}
+                alt="Tooltip"
+                className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+              />
+            </div>
+          )}
+        </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(1)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+        <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+          <img
+            src={image[1].src}
+            className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+            alt="image 2"
+          />
+        </div>
+        {visibleTooltip === 1 && (
+          <div
+            id="tooltip-1"
+            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-40px]"
+          >
+            <img
+              src={image[1].tooltip}
+              alt="Tooltip"
+              className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(2)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+        <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+          <img
+            src={image[2].src}
+            className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+            alt="image 3"
+          />
+        </div>
+        {visibleTooltip === 2 && (
+          <div
+            id="tooltip-2"
+            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-80px]"
+          >
+            <img
+              src={image[2].tooltip}
+              alt="Tooltip"
+              className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(3)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+        <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+          <img
+            src={image[3].src}
+            className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+            alt="image 4"
+          />
+        </div>
+        {visibleTooltip === 3 && (
+          <div
+            id="tooltip-3"
+            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-120px]"
+          >
+            <img
+              src={image[3].tooltip}
+              alt="Tooltip"
+              className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(4)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+        <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+          <img
+            src={image[4].src}
+            className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+            alt="image 5"
+          />
+        </div>
+        {visibleTooltip === 4 && (
+          <div
+            id="tooltip-4"
+            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-160px]"
+          >
+            <img
+              src={image[4].tooltip}
+              alt="Tooltip"
+              className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(5)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+        <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+          <img
+            src={image[5].src}
+            className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+            alt="image 6"
+          />
+        </div>
+        {visibleTooltip === 5 && (
+          <div
+            id="tooltip-4"
+            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-200px]"
+          >
+            <img
+              src={image[5].tooltip}
+              alt="Tooltip"
+              className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(6)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+        <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+          <img
+            src={image[6].src}
+            className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+            alt="image 5"
+          />
+        </div>
+        {visibleTooltip === 6 && (
+          <div
+            id="tooltip-4"
+            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-240px]"
+          >
+            <img
+              src={image[6].tooltip}
+              alt="Tooltip"
+              className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+    </div>
+
       <div className="max-w-[1100px] mx-auto mt-[70px] mb-[0px]">
         <div className="grid lg:grid-cols-2 xs:mx-6">
           <div>
@@ -577,8 +791,8 @@ export default function Home() {
         <div className="max-w-[1100px] mx-auto z-10 relative py-[70px]">
           <div className="grid lg:grid-cols-3">
             <div id="contact">
-              <div className="flex flex-row justify-between gap-4 xs:mx-6 lg:mx-0">
-                <div className="w-[150px]">
+              <div className="flex flex-row justify-between gap-4 mx-6 lg:mx-0">
+                <div className="max-w-[150px] w-full">
                   <Image src={images.logo} alt="" width={100} className="w-full" />
                 </div>
 
@@ -690,7 +904,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-6 right-6">
+
+      <div className="fixed bottom-6 right-6 z-10">
         <Fab
           onClick={handleClickWhatsApp}
           sx={{
