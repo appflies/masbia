@@ -27,11 +27,11 @@ function Slideshow() {
         </div>
 
         {/* Contenido encima del video */}
-        <div className="absolute inset-0 z-30 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="absolute z-30 flex items-center justify-center w-full h-full">
           <img
             src="/hero.png"
             alt="Slide 1"
-            className="w-[500px]"
+            className="w-[500px] absolute top-28 left-1/2 transform -translate-x-1/2"
           />
         </div>
       </div>

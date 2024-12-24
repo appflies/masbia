@@ -29,7 +29,7 @@ import {
 
 export default function Home() {
   const handleClickWhatsApp = () => {
-    window.open("https://wa.me/message/XTCMJ66XPD6LG1", "_blank");
+    window.open("https://api.whatsapp.com/send/?phone=1149373697", "_blank");
   }
 
   const handleLearnMoreClick = () => {
@@ -48,6 +48,7 @@ export default function Home() {
     { src: "/images/09.jpg", tooltip: "/images/burguer.png" },
     { src: "/images/11.jpg", tooltip: "/images/hotdog.png" },
     { src: "/images/13.jpg", tooltip: "/images/albondiga.png" },
+    { src: "/images/22.jpeg", tooltip: "/images/beef.png" },
   ];
 
   const [visibleTooltip, setVisibleTooltip] = React.useState<number | null>(null);
@@ -276,6 +277,38 @@ export default function Home() {
               alt="Tooltip"
               className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
+          </div>
+        )}
+      </div>
+
+      <div
+        className="relative"
+        onMouseEnter={() => setVisibleTooltip(7)}
+        onMouseLeave={() => setVisibleTooltip(null)}
+      >
+      <div className="w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full">
+      <img
+        src={image[7].src}
+        className="object-cover w-[40px] h-[40px] lg:w-[90px] lg:h-[90px] rounded-full"
+        alt="image 5"
+      />
+      </div>
+        {visibleTooltip === 7 && (
+          <div
+            id="tooltip-4"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-240px]"
+          >
+          <img
+            src={image[7].tooltip}
+            alt="Tooltip"
+            className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+          />
+
+          <img
+            src="/images/22.jpeg"
+            alt="Tooltip"
+            className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+          />
           </div>
         )}
       </div>
@@ -936,7 +969,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="fixed bottom-6 right-6 z-10">
+      <div className="fixed bottom-6 right-6 z-50">
         <Fab
           onClick={handleClickWhatsApp}
           sx={{
