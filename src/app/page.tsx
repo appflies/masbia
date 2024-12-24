@@ -56,16 +56,6 @@ export default function Home() {
     <React.Fragment>
       <Header />
 
-      <div className="mt-16 bg-greenbg bg-cover bg-center pb-6">
-
-          <div className="w-[350px] h-[240px] lg:w-[590px] mx-auto lg:h-[300px]">
-            <video className="object-cover w-full h-full" controls>
-            <source src="/spot.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-
       <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mt-6">
         <div
           className="relative"
@@ -82,12 +72,17 @@ export default function Home() {
           {visibleTooltip === 0 && (
             <div
               id="tooltip-0"
-              className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[0px]"
+              className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[0px]"
             >
               <img
                 src={image[0].tooltip}
                 alt="Tooltip"
                 className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+              />
+              <img
+                src="/images/15.jpg"
+                alt="Tooltip"
+                className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
               />
             </div>
           )}
@@ -108,12 +103,18 @@ export default function Home() {
         {visibleTooltip === 1 && (
           <div
             id="tooltip-1"
-            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-40px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-40px]"
           >
             <img
               src={image[1].tooltip}
               alt="Tooltip"
               className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+
+            <img
+              src="/images/18.jpg"
+              alt="Tooltip"
+              className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
           </div>
         )}
@@ -134,12 +135,18 @@ export default function Home() {
         {visibleTooltip === 2 && (
           <div
             id="tooltip-2"
-            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-80px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-80px]"
           >
             <img
               src={image[2].tooltip}
               alt="Tooltip"
               className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+
+            <img
+              src="/images/19.jpg"
+              alt="Tooltip"
+              className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
           </div>
         )}
@@ -160,12 +167,18 @@ export default function Home() {
         {visibleTooltip === 3 && (
           <div
             id="tooltip-3"
-            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-120px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-120px]"
           >
             <img
               src={image[3].tooltip}
               alt="Tooltip"
               className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+
+            <img
+              src="/images/17.jpg"
+              alt="Tooltip"
+              className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
           </div>
         )}
@@ -186,12 +199,18 @@ export default function Home() {
         {visibleTooltip === 4 && (
           <div
             id="tooltip-4"
-            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-160px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-160px]"
           >
             <img
               src={image[4].tooltip}
               alt="Tooltip"
               className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+
+            <img
+              src="/images/21.jpg"
+              alt="Tooltip"
+              className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
           </div>
         )}
@@ -212,12 +231,18 @@ export default function Home() {
         {visibleTooltip === 5 && (
           <div
             id="tooltip-4"
-            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-200px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-200px]"
           >
             <img
               src={image[5].tooltip}
               alt="Tooltip"
               className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+
+            <img
+              src="/images/16.jpg"
+              alt="Tooltip"
+              className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
           </div>
         )}
@@ -238,12 +263,18 @@ export default function Home() {
         {visibleTooltip === 6 && (
           <div
             id="tooltip-4"
-            className="absolute top-full mt-2 z-10 bg-gray-800 rounded-lg p-2 shadow-none left-[-240px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-240px]"
           >
             <img
               src={image[6].tooltip}
               alt="Tooltip"
               className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
+            />
+
+            <img
+              src="/images/20.jpg"
+              alt="Tooltip"
+              className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
             />
           </div>
         )}

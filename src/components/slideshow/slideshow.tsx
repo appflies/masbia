@@ -1,91 +1,39 @@
 "use client"
 
 import React from "react"
-import Image from "next/image"
-import { images } from "@/constants"
-import Autoplay from "embla-carousel-autoplay"
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel"
 import { Navbar } from "@/components"
 
 function Slideshow() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
-
   return (
     <React.Fragment>
-      <div className="relative w-screen h-full p-0 max-h-[680px] min-h-[480px] overflow-hidden">
-        <Navbar />
-        <Carousel
-          plugins={[plugin.current]}
-          className="absolute w-full h-full min-h-[480px] p-0 m-0"
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
-        >
-          <CarouselContent>
-            <CarouselItem key="1" className="min-h-[480px]">
-              <Card className="w-full h-full p-0 m-0 rounded-none h-full min-h-[480px]">
-                <CardContent className="w-full h-full p-0 m-0 relative min-h-[480px]">
-                  <Image
-                    src={images.slide1}
-                    alt="Slide 1"
-                    className="w-screen h-full object-cover"
-                  />
-                  <span className="flex justify-center items-center h-full absolute top-0 left-0 w-full">
-                    <Image
-                      src={images.hero}
-                      alt="Hero 1"
-                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[30%] lg:pt-[0px] xl:pt-0 xl:-mt-24 xs:mx-3"
-                    />
-                  </span>
-                </CardContent>
-              </Card>
-            </CarouselItem>
+      <div className="relative w-screen h-screen overflow-hidden">
+        {/* Navbar con z-index alto para que quede encima del video */}
+        <div className="relative z-50">
+          <Navbar />
+        </div>
 
-            <CarouselItem key="2" className="min-h-[480px]">
-              <Card className="w-full h-full p-0 m-0 rounded-none min-h-[480px]">
-                <CardContent className="w-full h-full p-0 m-0 relative min-h-[480px]">
-                  <Image
-                    src={images.slide2}
-                    alt="Slide 2"
-                    className="w-screen h-full object-cover"
-                  />
-                  <span className="flex justify-center items-center h-full absolute top-0 left-0 w-full">
-                    <Image
-                      src={images.hero}
-                      alt="Hero 2"
-                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[30%] lg:pt-[0px] xl:pt-0 xl:-mt-24 xs:mx-3"
-                    />
-                  </span>
-                </CardContent>
-              </Card>
-            </CarouselItem>
+        {/* Video de fondo */}
+        <div className="absolute top-0 left-0 w-full h-full z-10">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/spot.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-            <CarouselItem key="3" className="min-h-[480px]">
-              <Card className="w-full h-full p-0 m-0 rounded-none min-h-[480px]">
-                <CardContent className="w-full h-full p-0 m-0 relative min-h-[480px]">
-                  <Image
-                    src={images.slide3}
-                    alt="Slide 3"
-                    className="w-screen h-full object-cover"
-                  />
-                  <span className="flex justify-center items-center h-full absolute top-0 left-0 w-full">
-                    <Image
-                      src={images.hero}
-                      alt="Hero 3"
-                      className="w-[500px] xs:pb-[100px] xl:pb-[200px] xs:pt-[30%] lg:pt-[0px] xl:pt-0 xl:-mt-24 xs:mx-3"
-                    />
-                  </span>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          </CarouselContent>
-        </Carousel>
+        {/* Contenido encima del video */}
+        <div className="absolute inset-0 z-30 flex items-center justify-center bg-black bg-opacity-50">
+          <img
+            src="/hero.png"
+            alt="Slide 1"
+            className="w-[500px]"
+          />
+        </div>
       </div>
     </React.Fragment>
   )
