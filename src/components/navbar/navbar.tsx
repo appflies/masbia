@@ -25,6 +25,13 @@ function Navbar() {
           >
             <FontAwesomeIcon icon={faBars} className="text-[20px]" />
           </Button>
+
+          <div className="absolute top-4 right-4 lg:hidden xl:hidden">
+            <div className="flex items-center">
+              <Image src={images.logo} alt="Logo" width={120} height={20} />
+            </div>
+          </div>
+
           <div className="items-center justify-between hidden lg:flex">
             <div className="flex items-center">
               <Image src={images.logo} alt="Logo" width={150} height={50} />

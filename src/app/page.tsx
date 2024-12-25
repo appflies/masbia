@@ -57,6 +57,8 @@ export default function Home() {
     <React.Fragment>
       <Header />
 
+      <h2 className="uppercase font-bold text-[30px] text-center mt-10" id="about">Our plates</h2>
+
       <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mt-6">
         <div
           className="relative"
@@ -296,7 +298,7 @@ export default function Home() {
         {visibleTooltip === 7 && (
           <div
             id="tooltip-4"
-            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-240px]"
+            className="absolute top-full mt-2 z-50 bg-gray-800 rounded-lg p-2 shadow-none left-[-280px]"
           >
           <img
             src={image[7].tooltip}
