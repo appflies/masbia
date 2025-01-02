@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   const image = [
-    { src: "/images/01.jpg", tooltip: "/images/beef.png" },
+    { src: "/images/01.jpg", tooltip: "/images/muslo.png" },
     { src: "/images/02.jpg", tooltip: "/images/muslo.png" },
     { src: "/images/04.jpg", tooltip: "/images/weenie.png" },
     { src: "/images/06.jpg", tooltip: "/images/cow.png" },
@@ -83,7 +83,7 @@ export default function Home() {
                 className="object-cover max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
               />
               <img
-                src="/images/15.jpg"
+                src="/images/18.jpg"
                 alt="Tooltip"
                 className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
               />
@@ -307,7 +307,7 @@ export default function Home() {
           />
 
           <img
-            src="/images/22.jpeg"
+            src="/images/15.jpg"
             alt="Tooltip"
             className="object-cover mt-2 w-full max-w-[300px] lg:max-w-[500px] max-h-[200px] lg:max-h-[300px] rounded-lg"
           />

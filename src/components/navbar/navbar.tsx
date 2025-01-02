@@ -44,9 +44,6 @@ function Navbar() {
                   <FontAwesomeIcon icon={faMagnifyingGlass} className="text-[16px] mt-[10px] ml-4" />
                 </div>
 
-                <Button variant="cart" size="icon" className="ml-4 mt-[3px] h-[30px] w-[30px]">
-                  <FontAwesomeIcon icon={faShoppingCart} className="text-[12px]" />
-                </Button>
               </div>
 
               <div className="flex flex-row justify-between gap-9 uppercase text-[14px] font-semibold">
