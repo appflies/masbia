@@ -1,0 +1,130 @@
+{
+  "home": {
+    "plates": "Our plates",
+    "navigation": {
+      "title": "Already cooked food",
+      "about": {
+        "text": "About",
+        "url": "/#about"
+      },
+      "product": {
+        "text": "Our Product",
+        "url": "/#our-product"
+      },
+      "paradigm": {
+        "text": "A paradigm shift",
+        "url": "/#a-paradigm-shift"
+      },
+      "technology": {
+        "text": "Technology",
+        "url": "/#technology"
+      },
+      "benefits": {
+        "text": "Benefits",
+        "url": "/#benefits"
+      },
+      "references": {
+        "text": "References",
+        "url": "/#references"
+      },
+      "contact": {
+        "text": "Contact",
+        "url": "/#contact"
+      }
+    },
+    "about": {
+      "title": "About us",
+      "description": "Over 50 Years of Excellence in Kosher Products",
+      "one": "MASBIA is a company dedicated to developing and commercializing technology applied to foods of animal origin, to reach markets regardless of cold chains and thus facilitate better nutrition for a larger number of people.",
+      "two": "MASBIA promotes sustainable solutions consisting of protein foods, ready for consumption, safe, and that do not need refrigeration to be preserved after processing.",
+      "button": {
+        "text": "Learn more"
+      }
+    },
+    "product": {
+      "title": "Our product & process",
+      "description": "Ready-to-eat animal protein that does not require a cold chain and is free of pathogens",
+      "one": "Process that allows animal meat to be preserved in such a way that it does not require a cold chain for storage or transportation",
+      "two": "Long Life Meat is free of organisms harmful to health and can last up to 6 months at room temperature. It is safe, nutritious, tasty, durable, and versatile.",
+      "three": "This technological innovation, patented in various countries around the world, is achieved through cold pasteurization.",
+      "four": "Long Life Meat comes vacuum-packed, ready to consume or to be used as an ingredient in any type of preparation.",
+      "five": "MASBIA products have already been tested and approved in terms of their organoleptic characteristics and health conditions for consumption."
+    },
+    "paradigm": {
+      "title": "A paradigm shift",
+      "description": "The exceptional characteristics of the product, the new possibilities it offers, and the way it would affect consumer habits mean a paradigm change in terms of the conservation of meat and the way it is stored and transported, achieving a sustainable process",
+      "subtitle": "The needs that give rise to MASBIA are:",
+      "one": "The contribution to the safety of meat (whether poultry, fish, or bovine) through ionization.",
+      "two": "A product that does not require a cold chain, both in terms of practicality in its conservation and to combat hunger by delivering foods with a high concentration of proteins to areas where the cold chain is precarious or non-existent.",
+      "three": "The reduction in the generation of greenhouse gases (GHG), since ionization requires less energy than traditional cooking, and cold storage energy is not required for transportation, conservation, and display for consumption."
+    },
+    "technology": {
+      "title": "The technology",
+      "description": "With ionization, food becomes healthier and longer-lasting",
+      "one": "Some forty countries have incorporated this technology into their food codes to process more than 200 various foods or preparations. In Argentina, there are 25 years of experience operating the radiant unit",
+      "two": "lonization treatment does not produce effluents. A decrease in the microbiological content of food reduces logistics costs and costs due to rejection and waste. Betier conservation without the need for cold, increases the competitiveness of food products in the world market. This method, with more than 40 years of studies and tests, is supported by reports of the joint FAO/WHO/IAEA Expert Commitiee (International Food and Agriculture, Health and Atomic Energy of the United Nations), from the years 1981, 1991, 1999, according to the fact that they do not produce nutritional changes significant, neither teratogenic nor mutagenic, and not carcinogenic, due to the effect of ionization.",
+      "three": "This method, with more than 40 years of studies and tests, is supported by reports of the joint FAO/WHO/IAEA Expert Committee (International Food and Agriculture, Health and Atomic Energy of the United Nations), from the years 1981, 1991, 1999, according to the fact that they do not produce nutritional changes significant, neither teratogenic nor mutagenic, and not carcinogenic, due to the effect of ionization"
+    },
+    "benefits": {
+      "title": "Benefits",
+      "one": {
+        "title": "Do not require Cold chain",
+        "content": "It can be stored for up to one year at room temperature. environment without the need for any refrigeration"
+      },
+      "two": {
+        "title": "Harmless",
+        "content": "Free of pathogens, that is, incapable of generating diseases and retains the properties original foods"
+      },
+      "three": {
+        "title": "Ready for the consumption",
+        "content": "Cooked and packaged meat that maintains its tenderness and original flavor"
+      },
+      "four": {
+        "title": "Solutions",
+        "content": "It provides safe animal protein options in situations never before imagined, such as school meals, food for inmunosupressed patients, rations for mountaineers, long trips without refrigeration, etc."
+      },
+      "five": {
+        "title": "Lower costs of distribution",
+        "content": "Does not require refrigerated transportation, safe in cases of power outage and minimize waste"
+      },
+      "six": {
+        "title": "Without Borders",
+        "content": "Thank you to your characteristics innovative allows bring nutritious food to anyone Place of the world. In form of plans social assistance, rations for the army, humanitarian missions, etc. original foods"
+      },
+      "card": {
+        "one": {
+          "title": "sdg sustainability",
+          "content": {
+            "one": "The SDGs (Sustainable Development Goals) are 17 global objectives established in 2015 by the General Assembly of the United Nations, which should be achieved by 2030. It is worth highlighting the positive impact that long-life meat brings to these SDGs and sustainability in general.",
+            "two": "From a socio-environmental point of view, having animal protein that does not require a cold chain while maintaining its properties for at least 6 months at room temperature becomes a product capable of providing quality food to dispersed communities, far from centers of distribution and consumption, or difficult to access by terrestrial means, or that do not have energy for preservation and/or freezing of food, in addition to avoiding outbreaks of ETAs (Diseases Transmitted by Food)"
+          }
+        },
+        "two": {
+          "title": "health and safety",
+          "content": {
+            "one": "One thing to keep in mind regarding safety and healthiness is that 85% of chicken comes from whole plants, unfrozen and uncut. However, consumption is split evenly: 50% cut and 50% whole. The fact is that chicken is cut into pieces in some supermarkets and butcher shops, which goes to the detriment of quality control and good preservation of the meat",
+            "two": "The reason for this is twofold: on the one hand, some chicken parts can be sold at prices practically at cost, as is the case with &quot;leg and thigh,&quot; and on the other, the commercialization of chicken without freezing avoids the high costs not only of freezing to -18°C (IQF: individually quick frozen) but also of transport and storage in the cold chain"
+          }
+        }
+      }
+    },
+    "references": {
+      "title": "References",
+      "description": "There are no health risks for those who consume ionized food; on the contrary, it means that the product has an optimal health level",
+      "content": {
+        "one": "Food ionization (the application of ionizing food) is a technology that improves the safety and shelf life of food by reducing or eliminating microorganisms and insects.",
+        "two": "Ionization does not affect macronutrients, such as proteins, fats and carbohydrates carbon, nor in inerals.",
+        "three": "Like pasteurized milk and canned fruits and vegetables, ionization causes food is safer for the consumer."
+      },
+      "button": {
+        "text": "More information"
+      }
+    },
+    "flyer": "To endorse, approve, and hold the products produced, MASBIA has the support of prestigious institutions:",
+    "contact": {
+      "description": "MASBIA is a company dedicated to developing and commercialize technology applied to foods of animal origin, to reach the markets regardless of cold chains and thus facilitate better nutrition for a senior number of people",
+      "address": "Address",
+      "call-us": "Call Us"
+    }
+  }
+}

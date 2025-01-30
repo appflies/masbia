@@ -1,0 +1,35 @@
+{
+  "common": {
+    "navigation": {
+      "title": "Comida ya cocinada",
+      "about": {
+        "text": "Acerca de",
+        "url": "/#about"
+      },
+      "product": {
+        "text": "Nuestro Producto",
+        "url": "/#our-product"
+      },
+      "paradigm": {
+        "text": "Un cambio de paradigma",
+        "url": "/#a-paradigm-shift"
+      },
+      "technology": {
+        "text": "Tecnología",
+        "url": "/#technology"
+      },
+      "benefits": {
+        "text": "Beneficios",
+        "url": "/#benefits"
+      },
+      "references": {
+        "text": "Referencias",
+        "url": "/#references"
+      },
+      "contact": {
+        "text": "Contacto",
+        "url": "/#contact"
+      }
+    }
+  }
+}

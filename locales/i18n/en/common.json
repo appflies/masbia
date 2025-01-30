@@ -1,0 +1,35 @@
+{
+  "common": {
+    "navigation": {
+      "title": "Already cooked food",
+      "about": {
+        "text": "About",
+        "url": "/#about"
+      },
+      "product": {
+        "text": "Our Product",
+        "url": "/#our-product"
+      },
+      "paradigm": {
+        "text": "A paradigm shift",
+        "url": "/#a-paradigm-shift"
+      },
+      "technology": {
+        "text": "Technology",
+        "url": "/#technology"
+      },
+      "benefits": {
+        "text": "Benefits",
+        "url": "/#benefits"
+      },
+      "references": {
+        "text": "References",
+        "url": "/#references"
+      },
+      "contact": {
+        "text": "Contact",
+        "url": "/#contact"
+      }
+    }
+  }
+}

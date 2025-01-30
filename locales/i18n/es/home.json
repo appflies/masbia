@@ -1,0 +1,130 @@
+{
+  "home": {
+    "plates": "Nuestros platos",
+    "navigation": {
+      "title": "Comida ya cocida",
+      "about": {
+        "text": "Sobre nosotros",
+        "url": "/#about"
+      },
+      "product": {
+        "text": "Nuestro producto",
+        "url": "/#our-product"
+      },
+      "paradigm": {
+        "text": "Un cambio de paradigma",
+        "url": "/#a-paradigm-shift"
+      },
+      "technology": {
+        "text": "Tecnología",
+        "url": "/#technology"
+      },
+      "benefits": {
+        "text": "Beneficios",
+        "url": "/#benefits"
+      },
+      "references": {
+        "text": "Referencias",
+        "url": "/#references"
+      },
+      "contact": {
+        "text": "Contacto",
+        "url": "/#contact"
+      }
+    },
+    "about": {
+      "title": "Sobre nosotros",
+      "description": "Más de 50 años de excelencia en productos kosher",
+      "one": "MASBIA es una empresa dedicada al desarrollo y comercialización de tecnología aplicada a alimentos de origen animal, para llegar a los mercados sin depender de cadenas de frío y así facilitar una mejor nutrición a un mayor número de personas.",
+      "two": "MASBIA promueve soluciones sostenibles que consisten en alimentos proteicos, listos para el consumo, seguros y que no necesitan refrigeración para conservarse después de su procesamiento.",
+      "button": {
+        "text": "Saber más"
+      }
+    },
+    "product": {
+      "title": "Nuestro producto y proceso",
+      "description": "Proteína animal lista para comer, sin necesidad de cadena de frío y libre de patógenos",
+      "one": "Proceso que permite conservar la carne animal sin necesidad de cadena de frío para su almacenamiento o transporte.",
+      "two": "Long Life Meat está libre de organismos perjudiciales para la salud y puede durar hasta 6 meses a temperatura ambiente. Es segura, nutritiva, sabrosa, duradera y versátil.",
+      "three": "Esta innovación tecnológica, patentada en varios países del mundo, se logra mediante pasteurización en frío.",
+      "four": "Long Life Meat viene envasada al vacío, lista para consumir o utilizar como ingrediente en cualquier tipo de preparación.",
+      "five": "Los productos MASBIA ya han sido probados y aprobados en cuanto a sus características organolépticas y condiciones sanitarias para el consumo."
+    },
+    "paradigm": {
+      "title": "Un cambio de paradigma",
+      "description": "Las características excepcionales del producto, las nuevas posibilidades que ofrece y la forma en que impactará en los hábitos de consumo implican un cambio de paradigma en la conservación, almacenamiento y transporte de la carne, logrando un proceso sostenible.",
+      "subtitle": "Las necesidades que dieron origen a MASBIA son:",
+      "one": "Contribuir a la seguridad de la carne (ya sea avícola, pescado o bovino) mediante ionización.",
+      "two": "Un producto que no requiere cadena de frío, facilitando su conservación y contribuyendo a combatir el hambre al llevar alimentos con alta concentración de proteínas a zonas donde la cadena de frío es precaria o inexistente.",
+      "three": "La reducción de la generación de gases de efecto invernadero (GEI), ya que la ionización requiere menos energía que la cocción tradicional, y no se necesita energía para refrigeración durante el transporte, conservación y exhibición para consumo."
+    },
+    "technology": {
+      "title": "La tecnología",
+      "description": "Con ionización, los alimentos son más saludables y duraderos",
+      "one": "Alrededor de 40 países han incorporado esta tecnología en sus códigos alimentarios para procesar más de 200 tipos de alimentos o preparaciones. En Argentina, hay 25 años de experiencia operando la unidad radiante.",
+      "two": "El tratamiento por ionización no genera residuos. La disminución del contenido microbiológico de los alimentos reduce costos logísticos y de desperdicio. Mejor conservación sin necesidad de frío, aumentando la competitividad en el mercado global.",
+      "three": "Este método, con más de 40 años de estudios y pruebas, cuenta con respaldo de informes del Comité Conjunto FAO/OMS/OIEA (Organización para la Alimentación y Agricultura, Salud y Energía Atómica de la ONU) desde 1981, 1991 y 1999, indicando que no produce cambios nutricionales significativos ni efectos teratogénicos, mutagénicos o cancerígenos debido a la ionización."
+    },
+    "benefits": {
+      "title": "Beneficios",
+      "one": {
+        "title": "No requiere cadena de frío",
+        "content": "Puede almacenarse hasta un año a temperatura ambiente sin necesidad de refrigeración."
+      },
+      "two": {
+        "title": "Inocuo",
+        "content": "Libre de patógenos, es decir, incapaz de generar enfermedades y conserva las propiedades originales de los alimentos."
+      },
+      "three": {
+        "title": "Listo para el consumo",
+        "content": "Carne cocida y envasada que mantiene su ternura y sabor original."
+      },
+      "four": {
+        "title": "Soluciones",
+        "content": "Ofrece opciones de proteína animal segura en situaciones sin precedentes, como comidas escolares, alimentación para pacientes inmunosuprimidos, raciones para montañistas y viajes largos sin refrigeración."
+      },
+      "five": {
+        "title": "Menores costos de distribución",
+        "content": "No requiere transporte refrigerado, es seguro en casos de cortes de energía y minimiza el desperdicio."
+      },
+      "six": {
+        "title": "Sin fronteras",
+        "content": "Gracias a sus características innovadoras, permite llevar alimentos nutritivos a cualquier lugar del mundo en planes de asistencia social, raciones para el ejército, misiones humanitarias, etc."
+      },
+      "card": {
+        "one": {
+          "title": "Sostenibilidad ODS",
+          "content": {
+            "one": "Los ODS (Objetivos de Desarrollo Sostenible) son 17 objetivos globales establecidos en 2015 por la Asamblea General de la ONU para alcanzarse en 2030. La carne de larga duración tiene un impacto positivo en estos ODS y en la sostenibilidad.",
+            "two": "Desde un punto de vista socioambiental, contar con proteína animal que no requiera cadena de frío mientras conserva sus propiedades por al menos 6 meses a temperatura ambiente permite ofrecer alimentos de calidad a comunidades alejadas de los centros de distribución, de difícil acceso o sin energía para la conservación y congelación de alimentos, evitando además brotes de enfermedades transmitidas por alimentos (ETA)."
+          }
+        },
+        "two": {
+          "title": "Salud y seguridad",
+          "content": {
+            "one": "El 85% del pollo proviene de plantas enteras, sin congelar ni cortar. Sin embargo, su consumo se divide en partes iguales: 50% cortado y 50% entero. En supermercados y carnicerías, el pollo es cortado en piezas, lo que puede afectar el control de calidad y su adecuada conservación.",
+            "two": "Esto responde a dos razones: por un lado, algunas partes del pollo se venden a precios prácticamente de costo, como el 'muslo y contramuslo', y por otro, evitar la congelación reduce costos de almacenamiento, transporte y comercialización."
+          }
+        }
+      }
+    },
+    "references": {
+      "title": "Referencias",
+      "description": "No hay riesgos para la salud en el consumo de alimentos ionizados; por el contrario, garantiza un nivel óptimo de seguridad alimentaria.",
+      "content": {
+        "one": "La ionización de alimentos es una tecnología que mejora la seguridad y vida útil de los alimentos al reducir o eliminar microorganismos e insectos.",
+        "two": "La ionización no afecta macronutrientes como proteínas, grasas o carbohidratos, ni minerales.",
+        "three": "Al igual que la leche pasteurizada y las frutas y verduras enlatadas, la ionización hace que los alimentos sean más seguros para el consumidor."
+      },
+      "button": {
+        "text": "Más información"
+      }
+    },
+    "flyer": "Para avalar, aprobar y respaldar los productos de MASBIA, contamos con el apoyo de prestigiosas instituciones:",
+    "contact": {
+      "description": "MASBIA es una empresa dedicada al desarrollo y comercialización de tecnología aplicada a alimentos de origen animal, sin depender de cadenas de frío, para mejorar la nutrición de un mayor número de personas.",
+      "address": "Dirección",
+      "call-us": "Llámanos"
+    }
+  }
+}

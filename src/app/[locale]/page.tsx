@@ -27,7 +27,12 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+import { useTranslations, useLocale } from "next-intl";
+
 export default function Home() {
+  const t = useTranslations("home");
+  const locale = useLocale();
+
   const handleClickWhatsApp = () => {
     window.open("https://api.whatsapp.com/send/?phone=1149373697", "_blank");
   }
@@ -57,7 +62,7 @@ export default function Home() {
     <React.Fragment>
       <Header />
 
-      <h2 className="uppercase font-bold text-[30px] text-center mt-10" id="about">Our plates</h2>
+      <h2 className="uppercase font-bold text-[30px] text-center mt-10" id="about">{t("plates")}</h2>
 
       <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mt-6">
         <div
@@ -324,13 +329,13 @@ export default function Home() {
               <div>
                 <div className="flex flex-row">
                   <div>
-                    <h2 className="uppercase font-bold text-[30px]" id="about">About us</h2>
+                    <h2 className="uppercase font-bold text-[30px]" id="about">{t("about.title")}</h2>
                   </div>
                   <Separator className="max-w-[100px] mt-[22px] mx-auto h-1 bg-black" />
                 </div>
 
                 <div className="text-[#d4a564] text-[20px] italic">
-                  Over 50 Years of Excellence in Kosher Products
+                {t("about.description")}
                 </div>
               </div>
 
@@ -341,16 +346,11 @@ export default function Home() {
 
             <div className="space-y-5 text-justify">
               <p>
-                MASBIA is a company dedicated to developing and commercializing
-                technology applied to foods of animal origin, to reach markets regardless
-                of cold chains and thus facilitate better nutrition for a larger number of
-                people.
+                {t("about.one")}
               </p>
 
               <p>
-                MASBIA promotes sustainable solutions consisting of protein foods,
-                ready for consumption, safe, and that do not need refrigeration to be
-                preserved after processing.
+                {t("about.two")}
               </p>
             </div>
 
@@ -359,7 +359,7 @@ export default function Home() {
               variant="ghost"
               className={`button-with-triangle border-black border mt-4 px-10 rounded-none bg-white text-black`}
             >
-              Learn more
+            {t("about.button.text")}
             </Button>
           </div>
 
@@ -375,11 +375,10 @@ export default function Home() {
         <Image src={images.product} alt="product" className="absolute w-full h-full object-cover" />
         <div className="max-w-[1100px] mx-auto z-10 relative mb-[70px]">
           <div className="text-white text-center uppercase font-bold text-[32px] pt-[70px]" id="our-product">
-            Our product & process
+            {t("product.title")}
           </div>
           <div className="text-center text-[#d4a564] mt-1 text-[22px] italic lg:max-w-[540px] lg:mx-auto xs:mx-6">
-            Ready-to-eat animal protein that does not require a cold
-            chain and is free of pathogens
+            {t("product.description")}
           </div>
 
           <div className="relative lg:max-w-[630px] sm:max-w-[630px] xs:max-w-[80%] mx-auto">
@@ -402,8 +401,7 @@ export default function Home() {
             <div className="flex flex-row text-white">
               <FontAwesomeIcon icon={farCheckCircle} className="text-4xl" />
               <p className="ml-2 ">
-                Process that allows animal meat to be preserved in such a way that it does not require a cold chain for storage or
-                transportation
+                {t("product.one")}
               </p>
             </div>
 
@@ -411,8 +409,7 @@ export default function Home() {
               <div className="flex flex-row text-white">
                 <FontAwesomeIcon icon={farCheckCircle} className="text-white text-4xl" />
                 <p className="ml-2">
-                  Long Life Meat is free of organisms harmful to health and can last up to 6 months at room temperature. It is safe, nutritious,
-                  tasty, durable, and versatile.
+                  {t("product.two")}
                 </p>
               </div>
             </div>
@@ -421,7 +418,7 @@ export default function Home() {
               <div className="flex flex-row text-white">
                 <FontAwesomeIcon icon={farCheckCircle} className="text-white text-4xl" />
                 <p className="ml-2">
-                  This technological innovation, patented in various countries around the world, is achieved through cold pasteurization.
+                {t("product.three")}
                 </p>
               </div>
             </div>
@@ -430,7 +427,7 @@ export default function Home() {
               <div className="flex flex-row text-white">
                 <FontAwesomeIcon icon={farCheckCircle} className="text-white text-4xl" />
                 <p className="ml-2">
-                  Long Life Meat comes vacuum-packed, ready to consume or to be used as an ingredient in any type of preparation.
+                {t("product.four")}
                 </p>
               </div>
             </div>
@@ -439,8 +436,7 @@ export default function Home() {
               <div className="flex flex-row text-white">
                 <FontAwesomeIcon icon={farCheckCircle} className="text-white text-4xl" />
                 <p className="ml-2">
-                  MASBIA products have already been tested and approved in terms of their organoleptic characteristics and health
-                  conditions for consumption.
+                  {t(("product.five"))}
                 </p>
               </div>
             </div>
@@ -456,7 +452,7 @@ export default function Home() {
               <div>
                 <div className="flex flex-row">
                   <div>
-                    <h2 className="uppercase font-bold text-[30px]" id="a-paradigm-shift">A paradigm shift</h2>
+                    <h2 className="uppercase font-bold text-[30px]" id="a-paradigm-shift">{t("paradigm.title")}</h2>
                   </div>
                   <Separator className="w-[100px] mt-[22px] mx-6 xs:hidden lg:flex h-1 bg-black" />
                 </div>
@@ -465,16 +461,12 @@ export default function Home() {
 
             <div className="space-y-5 text-justify">
               <p>
-                The exceptional characteristics of the product, the new
-                possibilities it offers, and the way it would affect consumer
-                habits mean a paradigm change in terms of the conservation
-                of meat and the way it is stored and transported, achieving a
-                sustainable process
+                {t("paradigm.description")}
               </p>
             </div>
 
             <div className="mt-2 text-semibold text-[28px]  text-[#d4a564]">
-              The needs that give rise to MASBIA are:
+              {t("paradigm.subtitle")}
               <Separator className="h-1 bg-[#d4a564]" />
             </div>
 
@@ -482,28 +474,21 @@ export default function Home() {
               <div className="flex flex-row">
                 <FontAwesomeIcon icon={fasCheckCircle} className="text-gray-900 text-2xl mt-1" />
                 <p className="ml-2 ">
-                  The contribution to the safety of meat (whether poultry, fish, or
-                  bovine) through ionization.
+                  {t("paradigm.one")}
                 </p>
               </div>
 
               <div className="flex flex-row">
                 <FontAwesomeIcon icon={fasCheckCircle} className="text-gray-900 text-2xl mt-1" />
                 <p className="ml-2 ">
-                  A product that does not require a cold chain, both in terms of
-                  practicality in its conservation and to combat hunger by delivering
-                  foods with a high concentration of proteins to areas where the cold
-                  chain is precarious or non-existent.
+                  {t("paradigm.two")}
                 </p>
               </div>
 
               <div className="flex flex-row">
                 <FontAwesomeIcon icon={fasCheckCircle} className="text-gray-900 text-2xl mt-1" />
                 <p className="ml-2 ">
-                  The reduction in the generation of greenhouse gases (GHG), since
-                  ionization requires less energy than traditional cooking, and cold
-                  storage energy is not required for transportation, conservation, and
-                  display for consumption.
+                {t("paradigm.three")}
                 </p>
               </div>
             </div>
@@ -526,38 +511,22 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 lg:gap-8 xs:mx-6 mt-[20px]">
             <div>
               <h3 className="font-semibold text-[32px] uppercase text-white" id="technology">
-                The technology
+                {t("technology.title")}
               </h3>
 
               <div className="text-justify space-y-5">
                 <p className="text-[#d4a564] text-[24px] italic">
-                  With ionization, food becomes healthier
-                  and longer-lasting
+                {t("technology.description")}
                 </p>
 
                 <p className="text-white ">
-                  Some forty countries have incorporated this technology
-                  into their food codes to process more than 200 various
-                  foods or preparations. In Argentina, there are 25 years of
-                  experience operating the radiant unit
+                {t("technology.one")}
                 </p>
 
                 <Separator className="h-1 bg-[#d4a564]" />
 
                 <p className="text-white ">
-                  lonization treatment does not produce effluents. A
-                  decrease in the microbiological content of food reduces
-                  logistics costs and costs due to rejection and waste.
-                  Betier conservation without the need for cold, increases the
-                  competitiveness of food products in the world market.
-                  This method, with more than 40 years of studies and tests,
-                  is supported by reports of the joint FAO/WHO/IAEA Expert
-                  Commitiee (International Food and Agriculture, Health and
-                  Atomic Energy of the United Nations), from the years 1981,
-                  1991, 1999, according to the fact that they do not produce
-                  nutritional changes significant, neither teratogenic nor
-                  mutagenic, and not carcinogenic, due to the effect of
-                  ionization.
+                {t("technology.two")}
                 </p>
               </div>
             </div>
@@ -567,13 +536,7 @@ export default function Home() {
 
               <div className="text-justify mt-[20px] lg:mx-8 xs:mx-1">
                 <p className="text-white">
-                  This method, with more than 40 years of studies and tests, is
-                  supported by reports of the joint FAO/WHO/IAEA Expert
-                  Committee (International Food and Agriculture, Health and
-                  Atomic Energy of the United Nations), from the years 1981,
-                  1991, 1999, according to the fact that they do not produce
-                  nutritional changes significant, neither teratogenic nor
-                  mutagenic, and not carcinogenic, due to the effect of ionization
+                  {t("technology.three")}
                 </p>
               </div>
             </div>
@@ -591,7 +554,7 @@ export default function Home() {
               <Image src={images.world} alt="" width={70} className="w-[70px]" />
             </div>
             <div className="text-center text-white text-[40px] mt-2 font-semibold" id="benefits">
-              Benefits
+            {t("benefits.title")}
             </div>
           </div>
 
@@ -602,16 +565,13 @@ export default function Home() {
                 <div className="flex flex-row text-[#d4a564] mt-[20px]">
                   <FontAwesomeIcon icon={farCheckCircle} className="text-[#d4a564] text-3xl mt-4" />
                   <p className="ml-2 text-[24px] max-w-[200px] leading-[30px] italic">
-                    Do not require
-                    Cold chain
+                    {t("benefits.one.title")}
                   </p>
                 </div>
 
                 <div className="text-justify mt-[20px]">
                   <p className="text-white lg:max-w-[290px]">
-                    It can be stored for up to one year at
-                    room temperature. environment
-                    without the need for any refrigeration
+                    {t("benefits.one.content")}
                   </p>
                 </div>
               </div>
@@ -621,15 +581,13 @@ export default function Home() {
                 <div className="flex flex-row text-[#d4a564] mt-[40px]">
                   <FontAwesomeIcon icon={farCheckCircle} className="text-[#d4a564] text-3xl" />
                   <p className="ml-2 text-[24px] max-w-[200px] leading-[30px] italic">
-                    Harmless
+                    {t("benefits.two.title")}
                   </p>
                 </div>
 
                 <div className="text-justify mt-[20px]">
                   <p className="text-white lg:max-w-[290px]">
-                    Free of pathogens, that is, incapable
-                    of generating diseases and retains
-                    the properties original foods
+                    {t("benefits.two.content")}
                   </p>
                 </div>
               </div>
@@ -639,16 +597,13 @@ export default function Home() {
                 <div className="flex flex-row text-[#d4a564] mt-[40px]">
                   <FontAwesomeIcon icon={farCheckCircle} className="text-[#d4a564] text-3xl mt-4" />
                   <p className="ml-2 text-[24px] max-w-[200px] leading-[30px] italic">
-                    Ready for the
-                    consumption
+                    {t("benefits.three.title")}
                   </p>
                 </div>
 
                 <div className="text-justify mt-[20px]">
                   <p className="text-white lg:max-w-[290px]">
-                    Cooked and packaged meat that
-                    maintains its tenderness and
-                    original flavor
+                    {t("benefits.three.content")}
                   </p>
                 </div>
               </div>
@@ -658,18 +613,13 @@ export default function Home() {
                 <div className="flex flex-row text-[#d4a564] mt-[40px]">
                   <FontAwesomeIcon icon={farCheckCircle} className="text-[#d4a564] text-3xl" />
                   <p className="ml-2 text-[24px] max-w-[200px] leading-[30px] italic">
-                    Solutions
+                    {t("benefits.four.title")}
                   </p>
                 </div>
 
                 <div className="text-justify mt-[20px]">
                   <p className="text-white lg:max-w-[290px]">
-                    It provides safe animal protein
-                    options in situations never before
-                    imagined, such as school meals,
-                    food for inmunosupressed
-                    patients, rations for mountaineers,
-                    long trips without refrigeration, etc.
+                    {t("benefits.four.content")}
                   </p>
                 </div>
               </div>
@@ -679,16 +629,13 @@ export default function Home() {
                 <div className="flex flex-row text-[#d4a564] mt-[40px]">
                   <FontAwesomeIcon icon={farCheckCircle} className="text-[#d4a564] text-3xl mt-4" />
                   <p className="ml-2 text-[24px] max-w-[200px] leading-[30px] italic">
-                    Lower costs
-                    of distribution
+                    {t("benefits.five.title")}
                   </p>
                 </div>
 
                 <div className="text-justify mt-[20px]">
                   <p className="text-white lg:max-w-[290px]">
-                    Does not require refrigerated
-                    transportation, safe in cases of
-                    power outage and minimize waste
+                    {t("benefits.five.content")}
                   </p>
                 </div>
               </div>
@@ -698,19 +645,13 @@ export default function Home() {
                 <div className="flex flex-row text-[#d4a564] mt-[40px]">
                   <FontAwesomeIcon icon={farCheckCircle} className="text-[#d4a564] text-3xl" />
                   <p className="ml-2 text-[24px] max-w-[200px] leading-[30px] italic">
-                    Without
-                    Borders
+                    {t("benefits.six.title")}
                   </p>
                 </div>
 
                 <div className="text-justify mt-[20px]">
                   <p className="text-white lg:max-w-[290px]">
-                    Thank you to your characteristics
-                    innovative allows bring nutritious
-                    food to anyone Place of the world. In
-                    form of plans social assistance,
-                    rations for the army, humanitarian
-                    missions, etc. original foods
+                    {t("benefits.six.content")}
                   </p>
                 </div>
               </div>
@@ -732,21 +673,15 @@ export default function Home() {
                     className="absolute top-[-80px] left-1/2 transform -translate-x-1/2"
                   />
                   <div className="text-center text-[24px] uppercase font-semibold">
-                    sdg sustainability
+                    {t("benefits.card.one.title")}
                   </div>
                 </CardHeader>
                 <CardContent className="mt-[-18px] flex-grow">
                   <p className="text-[16px]">
-                    The SDGs (Sustainable Development Goals) are 17 global objectives established in 2015 by the General Assembly of
-                    the United Nations, which should be achieved by 2030. It is worth highlighting the positive impact that long-life meat
-                    brings to these SDGs and sustainability in general.
+                    {t("benefits.card.one.content.one")}
                   </p>
                   <p className="mt-6 text-justify text-[16px]">
-                    From a socio-environmental point of view, having animal protein that does not require a cold chain while maintaining
-                    its properties for at least 6 months at room temperature becomes a product capable of providing quality food to
-                    dispersed communities, far from centers of distribution and consumption, or difficult to access by terrestrial means, or
-                    that do not have energy for preservation and/or freezing of food, in addition to avoiding outbreaks of ETAs (Diseases
-                    Transmitted by Food)
+                    {t("benefits.card.one.content.two")}
                   </p>
                 </CardContent>
               </Card>
@@ -761,19 +696,15 @@ export default function Home() {
                     className="absolute top-[-60px] left-1/2 transform -translate-x-1/2"
                   />
                   <div className="text-center text-[24px] uppercase font-semibold">
-                    health and safety
+                    {t("benefits.card.two.title")}
                   </div>
                 </CardHeader>
                 <CardContent className="mt-[-10px] flex-grow">
                   <p className="text-[16px] mt-[-10px]">
-                    One thing to keep in mind regarding safety and healthiness is that 85% of chicken comes from whole plants, unfrozen and
-                    uncut. However, consumption is split evenly: 50% cut and 50% whole. The fact is that chicken is cut into pieces in some
-                    supermarkets and butcher shops, which goes to the detriment of quality control and good preservation of the meat
+                    {t("benefits.card.two.content.one")}
                   </p>
                   <p className="mt-6 text-justify text-[16px]">
-                    The reason for this is twofold: on the one hand, some chicken parts can be sold at prices practically at cost, as is the case
-                    with &quot;leg and thigh,&quot; and on the other, the commercialization of chicken without freezing avoids the high costs not only of
-                    freezing to -18°C (IQF: individually quick frozen) but also of transport and storage in the cold chain
+                    {t("benefits.card.two.content.two")}
                   </p>
                 </CardContent>
               </Card>
@@ -786,7 +717,7 @@ export default function Home() {
       <div className="max-w-[1100px] lg:mx-auto xs:mx-6 mt-[70px] mb-[60px]">
         <div className="flex flex-row">
           <div>
-            <h3 className="text-gray-900 font-semibold uppercase text-[30px]" id="references">References</h3>
+            <h3 className="text-gray-900 font-semibold uppercase text-[30px]" id="references">{t("references.title")}</h3>
           </div>
 
           <div>
@@ -795,25 +726,22 @@ export default function Home() {
         </div>
 
         <div className="text-[#d4a564] lg:text-[30px] xs:text-[20px] italic">
-          There are no health risks for those who consume ionized food;
-          on the contrary, it means that the product has an optimal health level
+          {t("references.description")}
         </div>
 
         <div className="grid lg:grid-cols-2 mt-[20px]">
           <div>
             <div className="text-justify space-y-5">
               <p>
-                Food ionization (the application of ionizing food) is a technology that improves the safety and shelf life of food by reducing or eliminating microorganisms and insects.
+                {t("references.content.one")}
               </p>
 
               <p>
-                Ionization does not affect macronutrients, such as proteins, fats and
-                carbohydrates carbon, nor in inerals.
+                {t("references.content.two")}
               </p>
 
               <p>
-                Like pasteurized milk and canned fruits and vegetables, ionization
-                causes food is safer for the consumer.
+                {t("references.content.three")}
               </p>
             </div>
 
@@ -822,7 +750,7 @@ export default function Home() {
               variant="ghost"
               className={`button-with-triangle border-black border mt-4 px-10 rounded-none bg-white text-black`}
             >
-              More information
+              {t("references.button.text")}
             </Button>
           </div>
 
@@ -839,7 +767,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2">
             <div className="text-white xs:ml-3">
               <div className="text-[18px]">
-                To endorse, approve, and hold the products produced, <span className="font-bold">MASBIA</span> has the support of prestigious institutions:
+                {t("flyer")}
               </div>
               <Image src={images.endorseLeft} alt="" className="w-full mt-4 pr-4" />
             </div>
@@ -868,11 +796,7 @@ export default function Home() {
               </div>
 
               <p className="mt-4 text-justify text-[14px] xs:mx-6 lg:mx-0">
-                MASBIA is a company dedicated to developing and
-                commercialize technology applied to foods of
-                animal origin, to reach the markets regardless
-                of cold chains and thus facilitate better nutrition
-                for a senior number of people
+                {t("contact.description")}
               </p>
             </div>
 
@@ -881,7 +805,7 @@ export default function Home() {
                 <CardContent>
                   <div>
                     <div className="mt-4">
-                      <p className="text-[10px] ml-7">Address</p>
+                      <p className="text-[10px] ml-7">{t("contact.address")}</p>
                       <div className="flex flex-row">
                         <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 text-[18px]" />
                         <div className="ml-2">
@@ -895,7 +819,7 @@ export default function Home() {
                       <div className="flex flex-row">
                         <FontAwesomeIcon icon={faPhone} className="mt-3 text-[18px]" />
                         <div className="ml-2">
-                          <p className="text-[13px]">Call Us</p>
+                          <p className="text-[13px]">{t("contact.call-us")}</p>
                           <p className="text-[13px]">+54 11 49373697</p>
                         </div>
                       </div>
@@ -926,10 +850,10 @@ export default function Home() {
 
                   <div className="uppercase">
                     <ul className="list-none text-[14px] space-y-1">
-                      <li><Link href={"/#references"}>References</Link></li>
-                      <li><Link href={"/#contact"}>Contact</Link></li>
-                      <li><Link href={"/#our-product"}>Our Product</Link></li>
-                      <li><Link href={"/#technology"}>Technology</Link></li>
+                      <li><Link href={"/#references"}>{t("navigation.references.text")}</Link></li>
+                      <li><Link href={"/#contact"}>{t("navigation.contact.text")}</Link></li>
+                      <li><Link href={"/#our-product"}>{t("navigation.product.text")}</Link></li>
+                      <li><Link href={"/#technology"}>{t("navigation.technology.text")}</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -941,13 +865,9 @@ export default function Home() {
 
                   <div className="uppercase">
                     <ul className="list-none text-[14px] space-y-1">
-                      <li><Link href={"/#a-paradigm-shift"}>A Paradigm Shift</Link></li>
-                      <li><Link href={"/#about"}>About Us</Link></li>
-                      <li><Link href={"/#benefits"}>Benefits</Link></li>
-                      <li>
-                        Shop
-                        <FontAwesomeIcon icon={faShoppingCart} className="text-[16px] ml-1" />
-                      </li>
+                      <li><Link href={"/#a-paradigm-shift"}>{t("navigation.paradigm.text")}</Link></li>
+                      <li><Link href={"/#about"}>{t("navigation.references.text")}</Link></li>
+                      <li><Link href={"/#benefits"}>{t("navigation.benefits.text")}</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -965,7 +885,7 @@ export default function Home() {
             </div>
 
             <div>
-              Developed by Appflies
+              Powered by
             </div>
           </div>
         </div>

@@ -13,7 +13,12 @@ import Image from "next/image";
 import { images } from "@/constants"
 import Link from "next/link"
 
+import { useTranslations, useLocale } from "next-intl";
+
 const Drawer = ({ isOpen, toggle }: any) => {
+  const t = useTranslations("common");
+  const locale = useLocale();
+
   return (
     <React.Fragment>
       <Draw anchor={"left"} open={isOpen} onClose={() => toggle()}>
@@ -37,7 +42,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#about"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">About</span>
+                  <span className="text-[20px] uppercase">{t("navigation.about.text")}</span>
                 </ListItemButton>
               </ListItem>
 
@@ -47,7 +52,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#our-product"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">Our product</span>
+                  <span className="text-[20px] uppercase">{t("navigation.product.text")}</span>
                 </ListItemButton>
               </ListItem>
 
@@ -57,7 +62,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#a-paradigm-shift"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">A paradigm shift</span>
+                  <span className="text-[20px] uppercase">{t("navigation.paradigm.text")}</span>
                 </ListItemButton>
               </ListItem>
 
@@ -67,7 +72,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#technology"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">Technology</span>
+                  <span className="text-[20px] uppercase">{t("navigation.technology.text")}</span>
                 </ListItemButton>
               </ListItem>
 
@@ -77,7 +82,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#benefits"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">Benefits</span>
+                  <span className="text-[20px] uppercase">{t("navigation.benefits.text")}</span>
                 </ListItemButton>
               </ListItem>
 
@@ -87,7 +92,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#references"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">references</span>
+                  <span className="text-[20px] uppercase">{t("navigation.references.text")}</span>
                 </ListItemButton>
               </ListItem>
 
@@ -97,7 +102,7 @@ const Drawer = ({ isOpen, toggle }: any) => {
                   href="/#contact"
                   onClick={() => toggle()}
                 >
-                  <span className="text-[20px] uppercase">Contact</span>
+                  <span className="text-[20px] uppercase">{t("navigation.contact.text")}</span>
                 </ListItemButton>
               </ListItem>
             </List>
